@@ -1,0 +1,246 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/* Definir padrão para todos elementos, por isso usamos *(asteristico) */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Definimos o body padrão para todos os elementos */
+body {
+    background-image: url('/assets/img.png');
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 1250px) {
+    width: 90%;
+}
+
+.home-page {
+    .banner_img {
+        opacity: 0.85;
+        margin-right: 30px; 
+        border: 3px solid #8b358b;
+        border-radius: 20px;
+        width: 400px;
+        float: left;
+
+        .flip-card-inner {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 #0000001a;
+        }
+
+        .flip-card-front, .flip-card-back {
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front img {
+            display: block; 
+            border-radius: 21px;
+        }
+
+        .flip-card-back {
+            transform: rotateY(180deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background-color: #be55be;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        p {
+            font: 22px Segoe UI;
+            text-align: center;
+            padding: 10px 10px;
+        }
+    }
+
+    .banner_text {
+        font: italic 46px Candara;
+        letter-spacing: 4px;
+        color: #e912c5;
+        float: left;
+        text-align: center;
+        padding-top: 220px;
+        width: 679px;
+    }
+}
+
+.container-banner {
+    position: relative;
+    display: flex;
+    height: 100vh;
+     
+    .site-container {
+        position: relative;
+        z-index: 1;
+        width: 1115px;
+        display: flex;
+        align-items: center;    
+        letter-spacing: 3px;
+    }
+    
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.85;
+    }
+}
+
+.navigation {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    margin-top: 10px;
+
+    .nav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .nav-menu {
+            color: #fff;
+            display: none;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: #000;
+
+            .nav-menu-list {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                padding: 3%;
+                border: 5px solid #fff;
+                border-radius: 15px;
+                background-color: #ff69b4;    
+            
+                li {
+                    margin-bottom: 20px;
+                    list-style: none;
+                    text-align: center;
+                    font-family: Candara;
+
+                    a {
+                        color: #fff;
+                        font-size: 30px;
+                        font-weight: 600;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        transition: 0.3s ease;
+
+                        &:hover {
+                            color: #FFC0CB;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .menu-toggle {
+        cursor: pointer;
+        z-index: 3;
+        position: fixed;
+        right: 80px;
+        top: 35px;
+        
+        .line1, .line2, .line3 {
+            width: 30px;
+            height: 3px;
+            background-color: #FF1493;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+    }
+
+    .change {
+        .line1 {
+            transform: rotate(-45deg) translate(-6px, 6px);
+        }
+
+        .line2 {
+            opacity: 0;
+        }
+
+        .line3 {
+            transform: rotate(45deg) translate(-6px, -7px);
+        }
+    }
+}
+
+.introduction-page {
+    .banner_imgs {
+        border: 3px solid #8b358b;
+        float: right;
+        margin: -560px 50px 0 0;
+        border-radius: 10px;
+        height: 574px;
+
+        img {
+            border-radius: 8px;
+        }
+      }
+      
+    .banner_text {
+        
+        .banner_title {
+            margin: 10px 50px 80px 0px;
+            color: #e912c5;
+            font: italic 55px Candara;
+            text-align: center;
+        }
+    
+        .banner_content {
+            text-align: left;
+            color: #fff;
+            font-family: 'Maiandra GD Regular';
+            line-height: 1.5;
+            
+            h3 {
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 18px;
+                width: 50%;
+                text-align: justify; 
+            }
+        }
+    }
+}

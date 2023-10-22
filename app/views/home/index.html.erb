@@ -1,0 +1,29 @@
+<div class="home-page">
+	<div class="banner_img" onclick="flipCard(this)">
+		<div class="flip-card-inner">
+			<div class="flip-card-front">
+				<%= image_tag "img2.png", width: "400px" %>
+			</div>
+			<div class="flip-card-back">
+				<p>'Quanto mais eu estudo, mais insaciável parece o meu apetite por estudo.' — Ada Lovelace.<br>
+					<br>Conheça as extraordinárias contribuições de Ada para a ciência da computação<br>
+					<br>Venham conhecer o seu legado.<br> <br> Clique no ícone para mais!
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="banner_text">
+		A primeira Programadora da História
+	</div>
+</div>
+
+<script type="text/javascript">
+	function flipCard(element) {
+		const innerCard = element.querySelector('.flip-card-inner');
+		if (innerCard.style.transform === 'rotateY(180deg)') {
+			innerCard.style.transform = 'rotateY(0deg)';
+		} else {
+			innerCard.style.transform = 'rotateY(180deg)';
+		}
+	}
+</script>

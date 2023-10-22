@@ -1,0 +1,33 @@
+<nav class="navigation">
+    <div class="nav-inner">
+        <div class="nav-menu">
+            <ul class="nav-menu-list">
+                <li><a href="/">Página Inicial</a></li>
+                <li><a href="/introduction/index">Sua História</a></li>
+                <li><a href="#parceria">Parceria com Babbage</a></li>
+                <li><a href="#analitica">Visão Além dos Números</a></li>
+                <li><a href="#legado">Legado e Reconhecimento</a></li>
+            </ul>
+        </div>
+        
+        <div id="btnBurguer" class="menu-toggle" onclick="menuFn(this)">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+        <script>
+        function menuFn(x) {
+            x.classList.toggle("change"); 
+        }
+        </script>
+    </div>
+</nav>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $('.menu-toggle').on('click', function() {
+    $('.nav-menu').toggle('slow');
+    })
+});
+</script>
