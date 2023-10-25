@@ -1,2 +1,37 @@
-<h1>Partnership#index</h1>
-<p>Find me in app/views/partnership/index.html.erb</p>
+<div class="partnership-page">
+    <div class="banner_text">
+        <div class="banner_title">
+            Uma Parceria Visionária
+        </div>
+        <div class="banner_content">
+            <h3>O Nascimento do Primeiro Algoritmo</h3>
+            <br>
+            <p>
+            Ada Lovelace e Charles Babbage, juntos, formaram uma das mais icônicas parcerias da história da tecnologia. Babbage, com sua Máquina Diferencial, tinha a estrutura; Lovelace trouxe a alma. <br>
+                <br>
+                Enquanto Babbage vislumbrava uma máquina de cálculos, Ada enxergava algo muito além. Ela compreendeu que os números poderiam representar entidades além de quantidades, como notas musicais ou letras. <br>
+                <br>
+                Traduzindo os trabalhos de Babbage sobre a Máquina Analítica, Ada adicionou notas detalhadas que extrapolavam o propósito original, abrindo portas para a programação moderna.<br>
+                <br>
+                Essa visão além dos números fez de Ada a profetisa do mundo computacional, imaginando um futuro onde as máquinas não apenas calculavam, mas criavam.<br>
+            </p>
+        </div>
+    </div>
+
+<!-- Estrutura básica de um modal para exibir a imagem em tela cheia -->
+    <div class="banner_imges"  onclick="img(this)">
+        <%= image_tag "img7.png", width: "350px", class:"img7" %>
+        <%= image_tag "img5.png", width: "350px", class:"img5" %>
+        <%= image_tag "img6.png", width: "350px", class:"img6" %>
+    </div>
+</div>
+
+<script type="text/javascript">
+$('.img5, .img6, .img7').on('click', function() {
+    if ($(this).css('width') == '600px') {
+        $(this).css('width', '');  // Reverte para a largura original (removendo a propriedade CSS).
+    } else {
+        $(this).css('width', '600px');
+    }
+});
+</script>
