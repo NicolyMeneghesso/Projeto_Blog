@@ -28,69 +28,8 @@ body {
     background-size: cover;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1350px) {
     width: 90%;
-}
-
-.home-page {
-    .banner_img {
-        opacity: 0.85;
-        margin-right: 30px; 
-        border: 3px solid #8b358b;
-        border-radius: 20px;
-        width: 400px;
-        float: left;
-
-        .flip-card-inner {
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-            box-shadow: 0 4px 8px 0 #0000001a;
-        }
-
-        .flip-card-front, .flip-card-back {
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-        }
-
-        .flip-card-front img {
-            display: block; 
-            border-radius: 21px;
-        }
-
-        .flip-card-back {
-            transform: rotateY(180deg);
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            background-color: #be55be;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-        }
-
-        p {
-            font: 22px Segoe UI;
-            text-align: center;
-            padding: 10px 10px;
-        }
-    }
-
-    .banner_text {
-        font: italic 46px Candara;
-        letter-spacing: 4px;
-        color: #e912c5;
-        float: left;
-        text-align: center;
-        padding-top: 220px;
-        width: 679px;
-    }
 }
 
 .container-banner {
@@ -204,11 +143,84 @@ body {
     }
 }
 
+.home-page {
+    .banner_img {
+        opacity: 0.85;
+        margin-right: 30px; 
+        border: 3px solid #8b358b;
+        border-radius: 20px;
+        width: 400px;
+        float: left;
+
+        p {
+            font: 22px Segoe UI;
+            text-align: center;
+            padding: 10px 10px;
+        }
+    }
+
+    .banner_text {
+        font: italic 46px Candara;
+        letter-spacing: 4px;
+        color: #e912c5;
+        float: left;
+        text-align: center;
+        padding-top: 220px;
+        width: 679px;
+    }
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 #0000001a;
+}
+
+    .flip-card-front, .flip-card-back {
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-front img {
+        display: block; 
+        border-radius: 21px;
+    }
+
+    .flip-card-back {
+        transform: rotateY(180deg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-color: #be55be;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .flip-card-backs { /* este codigo é referente ao card da pagina partnership */
+        transform: rotateY(180deg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        background-color: #be55be;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+    }
+
 .introduction-page {
     .banner_imgs {
         border: 3px solid #8b358b;
         float: right;
-        margin: -560px 50px 0 0;
+        margin: -585px 50px 0 0;
         border-radius: 10px;
         height: 574px;
 
@@ -229,8 +241,8 @@ body {
         .banner_content {
             text-align: left;
             color: #fff;
-            font-family: 'Maiandra GD Regular';
-            line-height: 1.5;
+            font-family: Lucida Handwriting Italico;
+            line-height: 1.4;
             
             h3 {
                 font-size: 25px;
@@ -247,56 +259,30 @@ body {
 
 .partnership-page {
     .banner_imges {
-        border-radius: 10px;
+        margin: 0 600px 20px 0; 
+        flex-direction: row; /* Empilhar as imagens verticalmente */
 
-        .img5 {
+        .img5, .img6, .img7 {
             border-radius: 8px;
             border: 3px solid #8b358b;
-        }
-
-        .img6 {
-            border-radius: 8px;
-            border: 3px solid #8b358b;
-        }
-
-        .img7 {
-            border-radius: 8px;
-            border: 3px solid #8b358b;
+            margin-bottom: 10px; /* Adicionar espaço entre as imagens */
         }
     }
 
-    .fullscreen {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.9); /* Fundo semi-transparente */
-        z-index: 1000; /* Para garantir que apareça acima de outros conteúdos */
-        display: none; /* Escondido por padrão */
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .fullscreen img {
-        max-width: 90%;
-        max-height: 90%;
-    }
-      
     .banner_text {
-        
         .banner_title {
-            margin: 10px 50px 40px 0px;
+            margin: 50px 0px 40px 60px;
             color: #e912c5;
             font: italic 55px Candara;
             text-align: center;
         }
     
-        .banner_content {
-            text-align: left;
+        .banner_content  {
+            flex: 1;
+            text-align: right;
             color: #fff;
-            font-family: 'Maiandra GD Regular';
-            line-height: 1.5;
+            font-family: "Lucida Handwriting Italico";
+            line-height: 1.4;
             
             h3 {
                 font-size: 25px;
@@ -304,8 +290,6 @@ body {
 
             p {
                 font-size: 18px;
-                width: 95%;
-                text-align: justify; 
             }
         }
     }

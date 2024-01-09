@@ -18,20 +18,39 @@
         </div>
     </div>
 
-<!-- Estrutura básica de um modal para exibir a imagem em tela cheia -->
-    <div class="banner_imges"  onclick="img(this)">
-        <%= image_tag "img7.png", width: "350px", class:"img7" %>
-        <%= image_tag "img5.png", width: "350px", class:"img5" %>
-        <%= image_tag "img6.png", width: "350px", class:"img6" %>
-    </div>
-</div>
+    <!-- Estrutura básica de um modal para exibir a imagem um pouco maior -->
 
-<script type="text/javascript">
-$('.img5, .img6, .img7').on('click', function() {
-    if ($(this).css('width') == '600px') {
-        $(this).css('width', '');  // Reverte para a largura original (removendo a propriedade CSS).
-    } else {
-        $(this).css('width', '600px');
-    }
-});
-</script>
+    <div class="banner_imges">
+        <%= image_tag "img7.png", width: "400px", class:"img7" %>
+    </div>
+
+    <div class="banner_imges" onclick="flipCard(this)">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <%= image_tag "img5.png", width: "400px", class:"img5" %>
+            </div>
+            <div class="flip-card-backs">
+                <%= image_tag "img6.png", width: "400px", class:"img6" %>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $('.img7').on('click', function() {
+            if ($(this).css('width') == '600px') {
+                $(this).css('width', '');
+            } else {
+                $(this).css('width', '600px');
+            }
+        });
+
+        function flipCard(element) {
+            const innerCard = element.querySelector('.flip-card-inner');
+            if (innerCard.style.transform === 'rotateY(180deg)') {
+                innerCard.style.transform = 'rotateY(0deg)';
+            } else {
+                innerCard.style.transform = 'rotateY(180deg)';
+            }
+        }
+
+    </script>
