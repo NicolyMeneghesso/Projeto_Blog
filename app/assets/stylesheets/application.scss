@@ -16,7 +16,7 @@
 
 /* Definir padrão para todos elementos, por isso usamos *(asteristico) */
 
-* {
+* { /*Resta as margins e o padding */
     margin: 0;
     padding: 0;
 }
@@ -28,25 +28,23 @@ body {
     background-size: cover;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1350px) { /* é definir a largura de elementos HTML*/
     width: 90%;
 }
 
 .container-banner {
     position: relative;
-    display: flex;
     height: 100vh;
      
     .site-container {
         position: relative;
         z-index: 1;
         width: 1115px;
-        display: flex;
-        align-items: center;    
+        margin: 0 auto;  
         letter-spacing: 3px;
     }
     
-    &:after {
+    &:after { /* O fundo da pagina */
         content: '';
         position: absolute;
         top: 0;
@@ -146,26 +144,26 @@ body {
 .home-page {
     .banner_img {
         opacity: 0.85;
-        margin-right: 30px; 
         border: 3px solid #8b358b;
-        border-radius: 20px;
+        border-radius: 18px;
         width: 400px;
         float: left;
+        margin-top: 30px;
 
-        p {
+        p { /* Card atrás da foto */
             font: 22px Segoe UI;
             text-align: center;
             padding: 10px 10px;
         }
     }
 
-    .banner_text {
+    .banner_text { /* titulo */
         font: italic 46px Candara;
         letter-spacing: 4px;
         color: #e912c5;
         float: left;
         text-align: center;
-        padding-top: 220px;
+        padding-top: 280px;
         width: 679px;
     }
 }
@@ -177,7 +175,6 @@ body {
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 #0000001a;
-}
 
     .flip-card-front, .flip-card-back {
         width: 100%;
@@ -215,12 +212,13 @@ body {
         display: flex;
         align-items: center;
     }
+}
 
 .introduction-page {
     .banner_imgs {
         border: 3px solid #8b358b;
         float: right;
-        margin: -585px 50px 0 0;
+        margin: -560px 50px 0 0;
         border-radius: 10px;
         height: 574px;
 
@@ -232,7 +230,7 @@ body {
     .banner_text {
         
         .banner_title {
-            margin: 10px 50px 80px 0px;
+            margin: 10px 50px 50px 0px;
             color: #e912c5;
             font: italic 55px Candara;
             text-align: center;
@@ -241,7 +239,7 @@ body {
         .banner_content {
             text-align: left;
             color: #fff;
-            font-family: Lucida Handwriting Italico;
+            font-family: Century Gotich;
             line-height: 1.4;
             
             h3 {
@@ -258,18 +256,25 @@ body {
 }
 
 .partnership-page {
-    .banner_imges {
-        margin: 0 600px 20px 0; 
-        flex-direction: row; /* Empilhar as imagens verticalmente */
+    .content-images {
+        float: left;
+        width: 415px;
 
-        .img5, .img6, .img7 {
-            border-radius: 8px;
-            border: 3px solid #8b358b;
-            margin-bottom: 10px; /* Adicionar espaço entre as imagens */
+        .banner_imges {
+            margin: -25px 0 15px 0; 
+            flex-direction: row; /* Empilhar as imagens verticalmente */
+
+            .img5, .img6, .img7 {
+                border-radius: 8px;
+                border: 3px solid #8b358b;
+                margin-bottom: 10px; /* Adicionar espaço entre as imagens */
+            }
         }
     }
 
-    .banner_text {
+    .banner_text {  
+        margin-right: 8px;
+        
         .banner_title {
             margin: 50px 0px 40px 60px;
             color: #e912c5;
@@ -279,9 +284,10 @@ body {
     
         .banner_content  {
             flex: 1;
-            text-align: right;
+            text-align: justify;
+            text-align-last: left;
             color: #fff;
-            font-family: "Lucida Handwriting Italico";
+            font-family: Century Gotich;
             line-height: 1.4;
             
             h3 {

@@ -1,4 +1,24 @@
 <div class="partnership-page">
+    
+<!-- Estrutura exibir a imagem um pouco maior -->
+    <div class="content-images">
+        <div class="banner_imges">
+            <%= image_tag "img7.png", width: "380px", class:"img7" %>
+        </div>
+
+<!-- Estrutura para realizar a função de virar a imagem  -->
+        <div class="banner_imges" onclick="flipCard(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <%= image_tag "img5.png", width: "380px", class:"img5" %>
+                </div>
+                <div class="flip-card-backs">
+                    <%= image_tag "img6.png", width: "380px", class:"img6" %>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="banner_text">
         <div class="banner_title">
             Uma Parceria Visionária
@@ -18,31 +38,23 @@
         </div>
     </div>
 
-    <!-- Estrutura básica de um modal para exibir a imagem um pouco maior -->
-
-    <div class="banner_imges">
-        <%= image_tag "img7.png", width: "400px", class:"img7" %>
-    </div>
-
-    <div class="banner_imges" onclick="flipCard(this)">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <%= image_tag "img5.png", width: "400px", class:"img5" %>
-            </div>
-            <div class="flip-card-backs">
-                <%= image_tag "img6.png", width: "400px", class:"img6" %>
-            </div>
-        </div>
-    </div>
-
+<!-- Estrutura exibir a imagem um pouco maior -->
     <script type="text/javascript">
-        $('.img7').on('click', function() {
+        $('.img7').on('click', function() { /*$ é uma forma de chamar a classe pelo jquery, on = para chamar função */
             if ($(this).css('width') == '600px') {
                 $(this).css('width', '');
             } else {
                 $(this).css('width', '600px');
             }
         });
+
+        $('.img7').on('click', function() {
+            if ($('.banner_text').css('width') == '100px') {
+                $('.banner_text').css('width', '');
+            } else {
+                $('.banner_text').css('width', '100px');
+            }
+        })
 
         function flipCard(element) {
             const innerCard = element.querySelector('.flip-card-inner');
