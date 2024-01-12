@@ -1,19 +1,17 @@
 <div class="partnership-page">
-    
-<!-- Estrutura exibir a imagem um pouco maior -->
-    <div class="content-images">
-        <div class="banner_imges">
+    <div class="content-imags">
+        <div class="banner_imgs">
             <%= image_tag "img7.png", width: "380px", class:"img7" %>
         </div>
 
 <!-- Estrutura para realizar a função de virar a imagem  -->
-        <div class="banner_imges" onclick="flipCard(this)">
+        <div class="banner_imgs" onclick="flipCard(this)">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <%= image_tag "img5.png", width: "380px", class:"img5" %>
                 </div>
                 <div class="flip-card-backs">
-                    <%= image_tag "img6.png", width: "380px", class:"img6" %>
+                    <%= image_tag "img6.png", width: "450px", class:"img6" %>
                 </div>
             </div>
         </div>
@@ -27,35 +25,22 @@
             <h3>O Nascimento do Primeiro Algoritmo</h3>
             <br>
             <p>
-            Ada Lovelace e Charles Babbage, juntos, formaram uma das mais icônicas parcerias da história da tecnologia. Babbage, com sua Máquina Diferencial, tinha a estrutura; Lovelace trouxe a alma. <br>
+                Ada Lovelace e Charles Babbage, juntos, formaram uma das mais icônicas parcerias da história da tecnologia. Babbage, 
+                com sua Máquina Diferencial, tinha a estrutura; Lovelace trouxe a alma. <br>
                 <br>
-                Enquanto Babbage vislumbrava uma máquina de cálculos, Ada enxergava algo muito além. Ela compreendeu que os números poderiam representar entidades além de quantidades, como notas musicais ou letras. <br>
+                Enquanto Babbage vislumbrava uma máquina de cálculos, Ada enxergava algo muito além. Ela compreendeu que os números 
+                poderiam representar entidades além de quantidades, como notas musicais ou letras. <br>
                 <br>
-                Traduzindo os trabalhos de Babbage sobre a Máquina Analítica, Ada adicionou notas detalhadas que extrapolavam o propósito original, abrindo portas para a programação moderna.<br>
+                Traduzindo os trabalhos de Babbage sobre a Máquina Analítica, Ada adicionou notas detalhadas que extrapolavam o 
+                propósito original, abrindo portas para a programação moderna.<br>
                 <br>
-                Essa visão além dos números fez de Ada a profetisa do mundo computacional, imaginando um futuro onde as máquinas não apenas calculavam, mas criavam.<br>
+                Essa visão além dos números fez de Ada a profetisa do mundo computacional, imaginando um futuro onde as máquinas 
+                não apenas calculavam, mas criavam.<br>
             </p>
         </div>
     </div>
 
-<!-- Estrutura exibir a imagem um pouco maior -->
     <script type="text/javascript">
-        $('.img7').on('click', function() { /*$ é uma forma de chamar a classe pelo jquery, on = para chamar função */
-            if ($(this).css('width') == '600px') {
-                $(this).css('width', '');
-            } else {
-                $(this).css('width', '600px');
-            }
-        });
-
-        $('.img7').on('click', function() {
-            if ($('.banner_text').css('width') == '100px') {
-                $('.banner_text').css('width', '');
-            } else {
-                $('.banner_text').css('width', '100px');
-            }
-        })
-
         function flipCard(element) {
             const innerCard = element.querySelector('.flip-card-inner');
             if (innerCard.style.transform === 'rotateY(180deg)') {
@@ -64,5 +49,4 @@
                 innerCard.style.transform = 'rotateY(180deg)';
             }
         }
-
     </script>

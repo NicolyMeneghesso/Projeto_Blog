@@ -1,0 +1,62 @@
+.legacy-page {
+    .banner_text {
+        .banner_title {
+            margin: 10px 50px 50px 0px;
+            color: #e912c5;
+            font: italic 55px Candara;
+            text-align: center;
+        }
+    
+        .banner_content {
+            text-align: left;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            
+            h3 {
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 18px;
+                text-align: justify; 
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .content-imgs{
+        .banner_img {
+            opacity: 0.85;
+            border: 3px solid #8b358b;
+            border-radius: 18px;
+            float: left;
+            margin-top: 30px;            
+        }  
+    }  
+       
+    .flip-card-back1 { /*card parte de tr   ás da pag home */
+        transform: rotateY(180deg);
+        position: absolute;
+        backface-visibility: hidden;
+        top: 0;
+        left: 0;
+        background-color: #be55be;  
+        border-radius: 10px;
+        align-items: center;
+        padding: 55px 10px 0 10px;
+        width: 300px;
+        height: 300px;
+
+        h5 { /* Card atrás da foto */
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            text-align: center;
+        }
+        p { /* Card atrás da foto */
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            text-align: left;
+        }
+    }
+}

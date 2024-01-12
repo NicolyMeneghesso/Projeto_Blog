@@ -141,37 +141,9 @@ body {
     }
 }
 
-.home-page {
-    .banner_img {
-        opacity: 0.85;
-        border: 3px solid #8b358b;
-        border-radius: 18px;
-        width: 400px;
-        float: left;
-        margin-top: 30px;
-
-        p { /* Card atrás da foto */
-            font: 22px Segoe UI;
-            text-align: center;
-            padding: 10px 10px;
-        }
-    }
-
-    .banner_text { /* titulo */
-        font: italic 46px Candara;
-        letter-spacing: 4px;
-        color: #e912c5;
-        float: left;
-        text-align: center;
-        padding-top: 280px;
-        width: 679px;
-    }
-}
-
 .flip-card-inner {
     width: 100%;
     height: 100%;
-    text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 #0000001a;
@@ -186,117 +158,9 @@ body {
         display: block; 
         border-radius: 21px;
     }
-
-    .flip-card-back {
-        transform: rotateY(180deg);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        background-color: #be55be;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-    }
-
-    .flip-card-backs { /* este codigo é referente ao card da pagina partnership */
-        transform: rotateY(180deg);
-        position: absolute;
-        top: 0;
-        left: 0;
-        backface-visibility: hidden;
-        background-color: #be55be;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-    }
 }
 
-.introduction-page {
-    .banner_imgs {
-        border: 3px solid #8b358b;
-        float: right;
-        margin: -560px 50px 0 0;
-        border-radius: 10px;
-        height: 574px;
-
-        img {
-            border-radius: 8px;
-        }
-      }
-      
-    .banner_text {
-        
-        .banner_title {
-            margin: 10px 50px 50px 0px;
-            color: #e912c5;
-            font: italic 55px Candara;
-            text-align: center;
-        }
-    
-        .banner_content {
-            text-align: left;
-            color: #fff;
-            font-family: Century Gotich;
-            line-height: 1.4;
-            
-            h3 {
-                font-size: 25px;
-            }
-
-            p {
-                font-size: 18px;
-                width: 50%;
-                text-align: justify; 
-            }
-        }
-    }
-}
-
-.partnership-page {
-    .content-images {
-        float: left;
-        width: 415px;
-
-        .banner_imges {
-            margin: -25px 0 15px 0; 
-            flex-direction: row; /* Empilhar as imagens verticalmente */
-
-            .img5, .img6, .img7 {
-                border-radius: 8px;
-                border: 3px solid #8b358b;
-                margin-bottom: 10px; /* Adicionar espaço entre as imagens */
-            }
-        }
-    }
-
-    .banner_text {  
-        margin-right: 8px;
-        
-        .banner_title {
-            margin: 50px 0px 40px 60px;
-            color: #e912c5;
-            font: italic 55px Candara;
-            text-align: center;
-        }
-    
-        .banner_content  {
-            flex: 1;
-            text-align: justify;
-            text-align-last: left;
-            color: #fff;
-            font-family: Century Gotich;
-            line-height: 1.4;
-            
-            h3 {
-                font-size: 25px;
-            }
-
-            p {
-                font-size: 18px;
-            }
-        }
-    }
-}
+@import 'home/index';
+@import 'introduction/index';
+@import 'partnership/index';
+@import 'legacy/index';

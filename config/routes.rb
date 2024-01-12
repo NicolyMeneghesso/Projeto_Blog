@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'legacy/index'
   get 'partnership/index'
   get 'introduction/index'
   get 'home/index'
