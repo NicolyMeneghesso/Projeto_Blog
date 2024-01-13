@@ -1,16 +1,5 @@
 .introduction-page {
-    .banner_imgs {
-        border: 3px solid #8b358b;
-        float: right;
-        margin: -560px 50px 0 0;
-        border-radius: 10px;
-        height: 574px;
-
-        img {
-            border-radius: 8px;
-        }
-      }
-      
+     
     .banner_text {
         
         .banner_title {
@@ -35,6 +24,18 @@
                 width: 50%;
                 text-align: justify; 
             }
+        }
+    }
+
+    .banner_imgs {
+        border: 3px solid #8b358b;
+        float: right;
+        margin: -560px 50px 0 0;
+        border-radius: 10px;
+        height: 574px;
+
+        img {
+            border-radius: 8px;
         }
     }
 }
