@@ -1,0 +1,12 @@
+/usr/local/rvm/gems/ruby-3.1.2/gems/bundler-2.5.3/lib/bundler/definition.rb:465:in `validate_ruby!': Your Ruby version is 3.1.2, but your Gemfile specified 3.3.0 (Bundler::RubyVersionMismatch)
+	from /usr/local/rvm/gems/ruby-3.1.2/gems/bundler-2.5.3/lib/bundler/definition.rb:440:in `validate_runtime!'
+	from /usr/local/rvm/gems/ruby-3.1.2/gems/bundler-2.5.3/lib/bundler.rb:156:in `setup'
+	from /usr/local/rvm/gems/ruby-3.1.2/gems/bundler-2.5.3/lib/bundler/setup.rb:26:in `block in <top (required)>'
+	from /usr/local/rvm/gems/ruby-3.1.2/gems/bundler-2.5.3/lib/bundler/ui/shell.rb:159:in `with_level'
+	from /usr/local/rvm/gems/ruby-3.1.2/gems/bundler-2.5.3/lib/bundler/ui/shell.rb:111:in `silence'
+	from /usr/local/rvm/gems/ruby-3.1.2/gems/bundler-2.5.3/lib/bundler/setup.rb:26:in `<top (required)>'
+	from <internal:/usr/local/rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0/rubygems/core_ext/kernel_require.rb>:85:in `require'
+	from <internal:/usr/local/rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0/rubygems/core_ext/kernel_require.rb>:85:in `require'
+	from /root/nih/Projeto/config/boot.rb:3:in `<top (required)>'
+	from bin/rails:3:in `require_relative'
+	from bin/rails:3:in `<main>'

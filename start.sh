@@ -8,8 +8,8 @@ sudo chown -R $USER tmp
 sudo chown -R $USER public
 
 echo "Configurando .env"
-cp ./infra/production/env .env
-source .env
+# cp ./infra/production/env .env
+# source .env
 
 echo "Verify bundle"
 bundle check || bundle install
