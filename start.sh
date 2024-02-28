@@ -19,5 +19,5 @@ echo "Run Migrate"
 bundle exec rake db:migrate
 
 echo "Run Rails Server"
-nohup rails s -b 0.0.0.0 -p 3030 &
+nohup rails s -b 0.0.0.0 -p 3031 &
 
