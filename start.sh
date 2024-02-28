@@ -3,7 +3,7 @@ source /usr/local/rvm/scripts/rvm
 rvm use 3.3.0
 
 echo "Encerrando Rails Server"
-sudo kill -9 `sudo lsof -t -i:3030`
+sudo kill -9 `sudo lsof -t -i:3031`
 
 sudo chown -R $USER tmp
 sudo chown -R $USER public
