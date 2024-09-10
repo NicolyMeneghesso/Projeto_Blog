@@ -25,6 +25,6 @@ O blog é dedicado a Ada Lovelace, uma das figuras mais importantes na história
 
 ![Capa do Projeto](app/assets/images/Projeto_Blog/capa.png)
 ![Menu do Projeto](app/assets/images/Projeto_Blog/menu.png)
-![sua Historia](app/assets/images/Projeto_Blog/historia.png)
+![Sua Historia](app/assets/images/Projeto_Blog/historia.png)
 ![Parceria](app/assets/images/Projeto_Blog/parceria.png)
 ![Legado](app/assets/images/Projeto_Blog/legado.png)
