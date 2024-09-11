@@ -6,7 +6,6 @@ Este é o meu primeiro projeto de blog, desenvolvido como parte do meu aprendiza
 O projeto Meu Primeiro Blog é uma oportunidade de aplicar na prática as ferramentas e conceitos que venho aprendendo. Utilizando Ruby on Rails como a base do back-end, e HTML/CSS para a estrutura e estilização, consegui construir uma aplicação web completa, que me permitiu:
 
 * Configurar um ambiente de desenvolvimento em Rails;
-* Criar modelos e controladores para gerenciar o conteúdo;
 * Utilizar HTML para estruturar o conteúdo do blog;
 * Estilizar o layout com CSS para criar uma página visualmente agradável.
 
