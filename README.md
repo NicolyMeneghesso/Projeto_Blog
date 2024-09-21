@@ -1,6 +1,6 @@
 # Projeto Meu Primeiro Blog
 
-Este é o meu primeiro projeto de blog, criado como parte do meu aprendizado em tecnologias web. Utilizando Ruby on Rails no back-end e HTML/CSS para a estrutura e estilização, desenvolvi um blog dedicado a contar a história de Ada Lovelace, a primeira programadora da história. O foco está em explorar sua vida, contribuições e legado, proporcionando uma aplicação prática das ferramentas e conceitos que venho estudando.
+Este é o meu primeiro projeto de blog, criado como parte do meu aprendizado em tecnologias web. Utilizando Ruby on Rails no back-end e HTML/CSS para a estrutura e estilização, desenvolvi um blog dedicado a contar a história de Ada Lovelace, proporcionando uma aplicação prática das ferramentas e conceitos que venho estudando.
 
 # Tema do Blog: Ada Lovelace
 O blog é dedicado a Ada Lovelace, uma das figuras mais importantes na história da computação. O conteúdo do blog foca nos seguintes tópicos:
